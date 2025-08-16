@@ -10,9 +10,9 @@ public class Bill {
     private double totalAmount;
     private Timestamp billDate;
 
-    // New fields for display
-    private String customerName;          // Add this
-    private List<BillItem> billItems;     // Add this
+   
+    private String customerName;          
+    private List<BillItem> billItems;     
 
     // Getters and setters
     public int getBillId() { return billId; }
