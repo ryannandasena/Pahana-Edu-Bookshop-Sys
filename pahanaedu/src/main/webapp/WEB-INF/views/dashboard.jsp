@@ -63,6 +63,24 @@
             background-color: #2d6a4f;
             color: #fff;
         }
+        .logout-link {
+        color: #fff !important;
+        background-color: #d62828 !important; 
+        border: 1px solid #d62828 !important;
+    }
+        .logout-link:hover {
+        background-color: #a4161a !important; 
+        border-color: #a4161a !important;
+    }
+    .help-link {
+    color: #fff !important;
+    background-color: #1d4ed8 !important; /* blue background */
+    border: 1px solid #1d4ed8 !important;
+    }
+    .help-link:hover {
+    background-color: #1e40af !important; /* darker blue on hover */
+    border-color: #1e40af !important;
+    }
     </style>
 </head>
 <body>
@@ -90,8 +108,12 @@
             <% if ("ADMIN".equalsIgnoreCase(role)) { %>
                 <li><a href="<%= request.getContextPath() %>/user?action=list">Manage Users</a></li>
             <% } %>
+            
+            <li><a href="<%= request.getContextPath() %>/help.jsp" class="help-link">Help Guidelines</a></li>
+            
 
-            <li><a href="<%= request.getContextPath() %>/logout.jsp">Logout</a></li>
+            <li><a href="<%= request.getContextPath() %>/logout.jsp" class="logout-link">Logout</a></li>
+            
         </ul>
     </div>
 </body>
