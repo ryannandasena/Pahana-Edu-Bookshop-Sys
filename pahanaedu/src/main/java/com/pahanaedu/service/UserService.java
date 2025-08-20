@@ -1,12 +1,23 @@
 package com.pahanaedu.service;
 
 import com.pahanaedu.dao.UserDAO;
+import com.pahanaedu.dao.impl.UserDAOImpl;
 import com.pahanaedu.model.User;
 import java.util.List;
 
 public class UserService {
 
-    private UserDAO userDAO = new UserDAO();
+    private UserDAO userDAO;
+
+    // Constructor injection (better than new UserDAOImpl())
+    public UserService() {
+        this.userDAO = new UserDAOImpl();
+    }
+
+    // Alternative: allow injection for testing/mock DAO
+    public UserService(UserDAO userDAO) {
+        this.userDAO = userDAO;
+    }
 
     public User login(String username, String password) {
         if (username == null || username.isEmpty() ||

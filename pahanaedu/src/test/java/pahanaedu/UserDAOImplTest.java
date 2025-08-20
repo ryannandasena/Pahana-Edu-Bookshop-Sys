@@ -2,14 +2,15 @@ package pahanaedu;
 import com.pahanaedu.dao.UserDAO;
 import com.pahanaedu.model.User;
 import org.junit.jupiter.api.Test;
-
+import com.pahanaedu.dao.impl.UserDAOImpl;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class UserDAOImplTest {
 
-    private final UserDAO userDAO = new UserDAO();
+	private final UserDAO userDAO = new UserDAOImpl();
+
 
     @Test
     public void testAddUser() {

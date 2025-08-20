@@ -1,6 +1,6 @@
 package pahanaedu;
 import com.pahanaedu.dao.UserDAO;
-
+import com.pahanaedu.dao.impl.UserDAOImpl;
 import com.pahanaedu.model.User;
 import org.junit.jupiter.api.*;
 
@@ -11,7 +11,7 @@ public class LoginTest {
 
 	    @BeforeAll
 	    public static void setup() {
-	        userDAO = new UserDAO();
+	    	userDAO = new UserDAOImpl();
 	    }
 
 	    @Test
