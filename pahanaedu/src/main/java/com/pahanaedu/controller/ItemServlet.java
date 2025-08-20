@@ -1,4 +1,4 @@
-package com.pahanaedu.servlet;
+package com.pahanaedu.controller;
 
 import com.pahanaedu.model.Item;
 import com.pahanaedu.service.ItemService;

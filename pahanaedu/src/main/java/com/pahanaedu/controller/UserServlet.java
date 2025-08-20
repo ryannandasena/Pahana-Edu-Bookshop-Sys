@@ -1,4 +1,4 @@
-package com.pahanaedu.servlet;
+package com.pahanaedu.controller;
 
 import com.pahanaedu.model.User;
 import com.pahanaedu.service.UserService;

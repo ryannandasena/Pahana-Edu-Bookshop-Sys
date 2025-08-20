@@ -1,4 +1,4 @@
-package com.pahanaedu.servlet;
+package com.pahanaedu.controller;
 
 import com.pahanaedu.dao.CustomerDAO;
 import com.pahanaedu.dao.impl.CustomerDAOImpl;
